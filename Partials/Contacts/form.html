@@ -1,0 +1,60 @@
+<div class="contactform">
+	<div class="newform">
+		<div>
+			<h3>Contact Form</h3>
+		</div>
+		<div>
+			<label>First Name <span class="error" data-ng-show="alert.firstname">is required</span></label>
+			<input type="text" data-ng-model="contacts.newform.firstname" />
+		</div>
+		<div>
+			<label>Last Name <span class="error" data-ng-show="alert.lastname">is required</span></label>
+			<input type="text" data-ng-model="contacts.newform.lastname" />
+		</div>
+		<div>
+			<label>Address <span class="error" data-ng-show="alert.address">is required</span></label>
+			<textarea data-ng-model="contacts.newform.address"></textarea>
+		</div>
+		<div>
+			<label>City <span class="error" data-ng-show="alert.city">is required</span></label>
+			<input type="text" data-ng-model="contacts.newform.city" />
+		</div>
+		<div>
+			<label>State <span class="error" data-ng-show="alert.state">is required</span></label>
+			<input type="text" data-ng-model="contacts.newform.state" />
+		</div>
+		<div>
+			<label>ZIP <span class="error" data-ng-show="alert.zip">is required</span></label>
+			<input type="text" data-ng-model="contacts.newform.zip" numericonly-validation/>
+		</div>
+		<div class="options">
+			<a class="blueButton" data-ng-click="submitform()">Submit</a>
+		</div>
+		<div data-ng-class="alert.errorclass" data-ng-show="alert.diverror">
+			{{alert.message}}
+			{{inputfocus}}
+		</div>
+	</div>
+	<div class="contactlist">
+		<div>
+			<h3>Contact List</h3>
+		</div>
+		<div class="listcontainer">
+			<span data-ng-show="(contacts.list)?false:true">No contacts found.</span>
+			<div class="businesscard" data-ng-repeat="contact in contacts.list">
+				<div class="name">
+					<strong>
+						{{contact.firstname}} 
+						{{contact.lastname}}
+					</strong>
+				</div>
+				<div class="address">
+					{{contact.address}}
+					{{contact.city}}
+					{{contact.state}},
+					{{contact.zip}}
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

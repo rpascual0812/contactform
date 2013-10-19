@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html data-ng-app="onload">
+<head>
+    <title>Contact Form</title>
+    <link rel="stylesheet" type="text/css" href="./CSS/buttons.css">
+    <link rel="stylesheet" type="text/css" href="./CSS/main.css">
+
+    <script src="./JS/Angular/angular.1.2.0rc1.js"></script>
+    <script src="./JS/Angular/angular-route.min.js"></script>
+
+    <!-- BOOTSTRAP -->
+    <script src="./JS/Angular/ui-bootstrap-tpls-0.6.0.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="./CSS/bootstrap.combined.css">
+
+    <!-- MODULE -->
+    <script src="./JS/Index.js"></script>
+
+    <!-- CONTROLLERS -->
+    <script src="./JS/Controllers/ContactsController.js"></script>
+
+    <!-- FACTORIES -->
+    <script src="./JS/Factories/ContactsFactory.js"></script>
+
+    <!-- DIRECTIVES -->
+    <script src="./JS/Directives/NumericOnlyDirective.js"></script>
+</head>
+<body>
+    <div id="header">
+        <!-- <span>Contact Form</span> -->
+    </div>
+    <div id="container">
+        <div id="content" data-ng-view="">
+            
+        </div>
+    </div>
+    <div id="footer">
+
+    </div>
+</body>
+</html>
