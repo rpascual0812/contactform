@@ -2,10 +2,11 @@ Contact Form
 ===========
 
 A simple contact form developed using:
-	  Angular JS
-	  PHP
-	  CSS3
-	  PostgreSQL
+
++ Angular JS
++ PHP
++ CSS3
++ PostgreSQL
 
 Requirements
 ===========
