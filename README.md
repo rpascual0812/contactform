@@ -22,3 +22,7 @@ Instructions
 2. Restore ./DB/contact_form.sql.
 3. Open ./Functions/connect.php and rename the dbname to the name of the database you just created in step 1.
 
+Acknowledgement
+===========
+
+Button generated from http://www.bestcssbuttongenerator.com/
