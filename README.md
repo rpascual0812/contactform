@@ -11,9 +11,9 @@ A simple contact form developed using:
 Requirements
 ===========
 
-Web Server (Apache, Cherokee, etc.)
-PHP 5.3 or later
-PostgreSQL 9.1 or later
++ Web Server (Apache, Cherokee, etc.)
++ PHP 5.3 or later
++ PostgreSQL 9.1 or later
 
 Instructions
 ===========
