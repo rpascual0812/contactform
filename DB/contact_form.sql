@@ -1,5 +1,5 @@
--- 
--- Additional
+--
+-- Create user
 --
 
 create user contact_form with password 'contact_form';
@@ -84,24 +84,7 @@ ALTER TABLE ONLY contacts ALTER COLUMN pk SET DEFAULT nextval('contacts_pk_seq':
 --
 
 COPY contacts (pk, firstname, lastname, address, city, state, zip) FROM stdin;
-26	Rafael	Pascual	kasjdfkl	kjaslkdfj	kjlkasdjf	23423
-27	ksjdfl	kljasdklfj	kljlkasjdfkl	kjlkasjdkfl	kjsakdfj	23423
-28	sadf	asdfas	dfs	fsdf	asdf	23423
-29	sdfdsfdfs	ksdjf	kljdsfkl	kjlksjdf	kjkslf	243423
-30	Rafael	Pascual	4828 V. Baltazar St. Pinagbuhatan	Pasig	Metro Manila	1602
-31	sdfsd	sdfsadf	sdfsdf	sdfasdf	sdafasdf	234234
-32	sdfdf	sdfsd	sdfsd	sdfsd	sdfsd	3534
-33	askdfj	kjasdf	kjasdkfj	kasdjfk	asjdfkj	234
-34	Rafael	kajsdf	kjklsdjf	kjklasjdf	kjskdfjk	234324
-35	dsdf	sdf	sdfsdf	sdf	sdf	352345
 \.
-
-
---
--- Name: contacts_pk_seq; Type: SEQUENCE SET; Schema: public; Owner: contact_form
---
-
-SELECT pg_catalog.setval('contacts_pk_seq', 35, true);
 
 
 --
@@ -113,12 +96,12 @@ ALTER TABLE ONLY contacts
 
 
 --
--- Name: public; Type: ACL; Schema: -; Owner: postgres
+-- Name: public; Type: ACL; Schema: -; Owner: contact_form
 --
 
 REVOKE ALL ON SCHEMA public FROM PUBLIC;
-REVOKE ALL ON SCHEMA public FROM postgres;
-GRANT ALL ON SCHEMA public TO postgres;
+REVOKE ALL ON SCHEMA public FROM contact_form;
+GRANT ALL ON SCHEMA public TO contact_form;
 GRANT ALL ON SCHEMA public TO PUBLIC;
 
 
