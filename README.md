@@ -14,6 +14,7 @@ Requirements
 + Web Server (Apache, Cherokee, etc.)
 + PHP 5.3 or later
 + PostgreSQL 9.1 or later
++ For Windows users, you can download and install http://bitnami.com/stack/wapp
 
 Instructions
 ===========
